@@ -1,5 +1,5 @@
 # IP or URL of the server you want to deploy to
-APP_HOST=meteor.julien-c.fr
+APP_HOST=meteor.thomastraum.fr
 
 #SSH PORT
 

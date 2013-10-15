@@ -7,7 +7,7 @@ Deploy Meteor on EC2 (or your own server)
 The easiest way to install (or update) `meteoric` is using curl:
 
 ```bash
-$ curl https://raw.github.com/julien-c/meteoric.sh/master/install | sh
+$ curl https://raw.github.com/thomastraum/meteoric.sh/master/install | sh
 ```
 
 You may need to `sudo` in order for the script to symlink `meteoric` to your `/usr/local/bin`.
@@ -18,7 +18,7 @@ Create a conf file named `meteoric.config.sh` in your project's folder, setting 
 
 ```bash
 # IP or URL of the server you want to deploy to
-APP_HOST=meteor.julien-c.fr
+APP_HOST=meteor.thomastraum.fr
 
 # If you want a different ROOT_URL, when using a load balancer for instance, set it here
 #ROOT_URL=mycustom.url.com
@@ -81,6 +81,6 @@ $ meteoric deploy /path/to/your.config.sh
 
 Hat tip to @netmute for his [meteor.sh script](https://github.com/netmute/meteor.sh). In our case though, we think having to rebuild native packages like `fibers` kind of defeats the whole point of bundling the Meteor app. Additionally, our approach enables hot code fixes (you don't have to stop/start your node server, and your users' apps shouldn't be disrupted).
 
-This script is also based on this previous post: [How to deploy Meteor on Amazon EC2](http://julien-c.fr/2012/10/meteor-amazon-ec2/).
+This script is also based on this previous post: [How to deploy Meteor on Amazon EC2](http://thomastraum.fr/2012/10/meteor-amazon-ec2/).
 
 Cheers!
